@@ -2,6 +2,49 @@
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.colorer-title {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.colorer-title,
+.colorer-form-label {
+  color: #ffffff;
+  mix-blend-mode: difference;
+}
+
+.colorer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.colorer-form-label {
+  width: 75%;
+  float: left;
+  text-align: start;
+}
+
+.colorer-input {
+  padding: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  border: 4px solid transparent;
+}
+
+.colorer-hex-input {
+  letter-spacing: 0.1em;
+  background-color: #fff !important;
+  border-color: #bebebe;
+}
+
+.colorer-rgb-input {
+  color: #f8fffe;
+  background-color: #1e2734 !important;
 }
