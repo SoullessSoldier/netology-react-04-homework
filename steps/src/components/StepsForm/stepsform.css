@@ -1,0 +1,40 @@
+.stepsform-form {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stepsform-input-wrapper {
+  position: relative;
+  width: 40%;
+}
+
+.stepsform-label {
+  position: absolute;
+  top: -1.5rem;
+  float: left;
+  font-size: 0.8rem;
+  text-align: start;
+}
+
+.stepsform-input {
+  position: relative;
+  width: 100%;
+  min-height: 45px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.stepsform-btn {
+  min-height: 45px;
+  color: var(--color-gray);
+  background-color: transparent;
+}
+
+::-webkit-calendar-picker-indicator,
+::-webkit-inner-spin-button {
+  cursor: pointer;
+}

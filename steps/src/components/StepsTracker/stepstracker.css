@@ -1,0 +1,12 @@
+.stepstracker {
+    padding: 10px;
+    width: 100%;
+    min-height: 30vh;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.stepstracker-header {
+    margin-bottom: 40px;
+}
