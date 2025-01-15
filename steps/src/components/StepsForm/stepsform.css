@@ -28,6 +28,10 @@
   font-size: 1rem;
 }
 
+.stepsform-input:disabled {
+background-color: var(--color-light-gray);
+}
+
 .stepsform-btn {
   min-height: 45px;
   color: var(--color-gray);

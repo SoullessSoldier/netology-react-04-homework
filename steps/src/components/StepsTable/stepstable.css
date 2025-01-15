@@ -2,9 +2,9 @@
     width: calc(100% - 6px);
 }*/
 .stepstable-th {
-    width: 30%;
-    font-size: 0.8rem;
-}/*
+  width: 30%;
+  font-size: 0.8rem;
+} /*
 .scroll-table-body {
     height: 100%;
     padding: 15px;
@@ -12,46 +12,85 @@
 }*/
 
 .scroll-table-body {
-	height: 300px;
-	overflow-x: auto;
-	margin-top: 0px;
-	margin-bottom: 20px;
-	/* border-bottom: 1px solid #eee; */
-    scrollbar-gutter: stable;
+  height: 300px;
+  overflow-x: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  scrollbar-gutter: stable;
 }
+.scroll-table-body table {
+width: calc(100% - 6px);
+}
+
 .scroll-table table {
-	width: calc(100% - 6px);
-	table-layout: fixed;
-	border: none;
+  
+  table-layout: fixed;
+  border: none;
 }
+.stepstable {
+	padding: 0 12px 0 0;
+	width: 100%;
+}
+
 .scroll-table thead th {
-	font-weight: bold;
-	text-align: left;
-	border: none;
-	padding: 10px 21px 10px 15px;
-	/* background: #d8d8d8; */
-	/* font-size: 14px; */
-	/* border-left: 1px solid #ddd; */
-	/* border-right: 1px solid #ddd; */
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  padding: 10px 21px 10px 15px;
 }
 .scroll-table tbody td {
-	text-align: left;
-	/* border-left: 1px solid #ddd; */
-	/* border-right: 1px solid #ddd; */
-	padding: 10px 15px;
-	/* font-size: 14px; */
-	vertical-align: top;
+  text-align: center;
+  padding: 10px 15px;
+}
+.stepstable-btn {
+	width: 2rem;
+	height: 2rem;
+	padding: 5px;
+	background-color: transparent;
+	border-radius: 5px;
+	border: 2px solid transparent;
+}
+
+.stepstable-btn:not(:last-child) {
+	margin-right: 5px;
+}
+
+.stepstable-btn:hover {
+	border-color: var(--color-light-gray);
+}
+
+.stepstable-btn:focus {
+	border-color: var(--color-gray);
+}
+
+.stepstable-btn:active {
+	color: var(--color-white);
+	background-color: var(--color-light-gray);
+	border-color: var(--color-gray);
 }
 
 ::-webkit-scrollbar {
-	width: 6px;
-} 
+  width: 6px;
+}
 ::-webkit-scrollbar-track {
-    border-radius: 20px;
-	box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-} 
+  border-radius: 20px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
 ::-webkit-scrollbar-thumb {
-    background-color: var(--color-gray);
-    border-radius: 20px;
-	box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  background-color: var(--color-gray);
+  border-radius: 20px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (width < 480px) {
+  .scroll-table thead th,
+  .scroll-table tbody td {
+    padding: 5px;
+  }
+}
+
+@media (width < 480px) {
+  html {
+    font-size: 12px;
+  }
 }

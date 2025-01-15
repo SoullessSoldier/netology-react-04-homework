@@ -1,6 +1,7 @@
 import React from "react";
 import "./stepstable.css";
 import { convertData } from "@/utils/dataConverter";
+import { dateFormatter } from "@/utils/dateFormatter";
 import { TStepsItem } from "@/types";
 
 type TProps = {
@@ -28,17 +29,17 @@ const StepsTable: React.FC<TProps> = ({ data, onEditData, onDeleteData }) => {
             {convertedData.map((stepsItem) => {
               return (
                 <tr key={stepsItem.date}>
-                  <td className="stepstable-td">{stepsItem.date}</td>
+                  <td className="stepstable-td">{dateFormatter(stepsItem.date)}</td>
                   <td className="stepstable-td">
                     {stepsItem.quantity.toFixed(1)}
                   </td>
                   <td className="stepstable-td">
-                    <button
+                    <button className="stepstable-btn"
                       onClick={() => onEditData({ ...stepsItem, edit: true })}
                     >
                       <i className="fa fa-pencil" aria-hidden="true"></i>
                     </button>
-                    <button
+                    <button className="stepstable-btn"
                       onClick={() => onDeleteData({ ...stepsItem })}
                     >
                       <i className="fa fa-trash-o" aria-hidden="true"></i>
