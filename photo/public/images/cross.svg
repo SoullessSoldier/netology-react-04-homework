@@ -1,0 +1,12 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<clipPath id="clip60_7">
+			<rect id="cross" width="64" height="64" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip60_7)">
+		<line id="line1" x1="0" y1="0" x2="64" y2="64" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+		<line id="line2" x1="0" y1="64" x2="64" y2="0" stroke="currentColor" stroke-opacity="1" stroke-width="2"/>
+	</g>
+</svg>
+

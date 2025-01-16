@@ -1,0 +1,12 @@
+.preview-wrapper {
+    margin: 0 auto;
+}
+
+.preview-image-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    list-style: none;
+}

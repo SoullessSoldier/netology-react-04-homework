@@ -1,0 +1,54 @@
+<svg
+  width="200"
+  height="200"
+  viewBox="0 0 200 200"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <defs>
+    <clipPath id="clip57_1">
+      <rect
+        id="crossbox"
+        rx="0"
+        width="199"
+        height="199"
+        transform="translate(0.500000 0.500000)"
+        fill="white"
+        fill-opacity="0"
+      />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip57_1)">
+    <line
+      id="line1"
+      x1="0"
+      y1="0"
+      x2="200"
+      y2="200"
+      stroke="#000000"
+      stroke-opacity="1"
+      stroke-width="1"
+    />
+    <line
+      id="line2"
+      x1="0"
+      y1="200"
+      x2="200"
+      y2="0"
+      stroke="#000000"
+      stroke-opacity="1"
+      stroke-width="1"
+    />
+  </g>
+  <rect
+    id="crossbox"
+    rx="0"
+    width="199"
+    height="199"
+    transform="translate(0.500000 0.500000)"
+    stroke="#000000"
+    stroke-opacity="1"
+    stroke-width="1"
+  />
+</svg>
